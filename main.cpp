@@ -55,6 +55,15 @@ void stats(int, string, bool, bool, bool, bool , int);
 
 bool keep_playing();
 
+class Player{   //TODO
+private:
+string name;
+string sex;
+string ethnicity;
+
+public:
+};
+
 int main(){
 
 	int tip;
