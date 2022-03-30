@@ -1,7 +1,3 @@
-//Michael Huang
-//HW7.cpp
-//CISP 360
-
 #include<iostream>
 #include<limits>
 using namespace std;
@@ -219,7 +215,6 @@ void cls(){
 }
 
 
-//Specification C2 - Player Name
 string pre_name(){
 
     cls();
@@ -248,7 +243,6 @@ bool pre_sex(){
 
 	cout<<sex_pre<<endl; //TODO
 
-    //Specification C3 - Input Validation
 	while(sex_pre[0] != 'M' && sex_pre[0] != 'F' && sex_pre[0] != 'O'){
 		cout<<"This is not a valid input.  Please enter M/F/O."<<endl;
 
@@ -444,7 +438,6 @@ int first_room(bool gender, bool race){
 
 	int dinero;
 
-    //Specification C4 - Abbreviated Room Description
 	cout<<"North: Tax Collector\n"<<endl;
 
 	cout<<"As you walk down this path, you bump into a sort of tax "<<
@@ -457,7 +450,6 @@ int first_room(bool gender, bool race){
 
 	cout<<"\nWhat will you do?\n"<<endl;
 
-    //Specification B1 - Add more command options
 	if(gender == false || race == false){
 		cout<<"(Tweet): Tweet about his privileges and how he is "<<
 			"using it to oppressed you who does not have the "<<
@@ -609,7 +601,6 @@ bool second_room(string champ){
         cout<<champ<<": "<<hero<<"/3"<<"  "<<"TechLead: "<<ex_things<<"/3"<<endl;
     }
 
-    //Specification B3 - Add more monster
     if(hero < 1){
         cout<<"(You lost to Patrick.  You left with a heavy heart and a broken pride)"<<endl;
 
@@ -883,7 +874,6 @@ int fifth_room(int cheddar){
 
     cls();
 
-    //Specification A2 - Use an arry of structs
     int cookies_combo[11];
     int correct_result;
     int options;
@@ -1055,7 +1045,6 @@ void stats(int g_s, string title, bool gender, bool race, bool cool, bool drugs,
 }
 
 
-//Specification A3 - Let the player replay again until the player prompt to stop.
 bool keep_playing(){
 
     string answer;
